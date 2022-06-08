@@ -1767,7 +1767,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: 'Menu🎀',
                                     id: 'menu'
                                 }
                             }, {
@@ -1801,7 +1801,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: 'Menu🎀',
                                     id: 'menu'
                                 }
                             }, {
@@ -2081,8 +2081,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎶Audio🎶'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: 'Audio🎶'}, type: 1},
+                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: 'Video📽️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2277,7 +2277,7 @@ case 'webtonsearch': case 'webtoon':
 	    break
             case 'coffee': case 'kopi': {
             let buttons = [
-                    {buttonId: `coffe`, buttonText: {displayText: '➡️Next Image➡️'}, type: 1}
+                    {buttonId: `coffe`, buttonText: {displayText: 'Next Image➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
@@ -2295,7 +2295,7 @@ case 'webtonsearch': case 'webtoon':
                 anu = await wallpaper(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
 		let buttons = [
-                    {buttonId: `wallpaper ${text}`, buttonText: {displayText: '➡️Next Image➡️'}, type: 1}
+                    {buttonId: `wallpaper ${text}`, buttonText: {displayText: 'Next Image➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
@@ -2313,7 +2313,7 @@ case 'webtonsearch': case 'webtoon':
                 anu = await wikimedia(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
                 let buttons = [
-                    {buttonId: `wikimedia ${text}`, buttonText: {displayText: '➡️Next Image➡️'}, type: 1}
+                    {buttonId: `wikimedia ${text}`, buttonText: {displayText: 'Next Image➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
@@ -2330,7 +2330,7 @@ case 'webtonsearch': case 'webtoon':
                 let anu = await quotesAnime()
                 result = anu[Math.floor(Math.random() * anu.length)]
                 let buttons = [
-                    {buttonId: `quotesanime`, buttonText: {displayText: '➡️Next➡️'}, type: 1}
+                    {buttonId: `quotesanime`, buttonText: {displayText: 'Next➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
@@ -2344,7 +2344,7 @@ case 'webtonsearch': case 'webtoon':
 	        case 'motivasi': case 'motivationalquote': case 'bucinquote': case 'katasenja': case 'puisi': {
                 let anu = await fetchJson(api('zenz', '/api/'+command, {}, 'apikey'))
                 let buttons = [
-                    {buttonId: `motivasi`, buttonText: {displayText: '➡️Next➡️'}, type: 1}
+                    {buttonId: `motivasi`, buttonText: {displayText: 'Next➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     text: anu.result.message,
@@ -2681,8 +2681,8 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: 'With Watermark🥬'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'Audio🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.nowatermark },
@@ -2699,8 +2699,8 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'No Watermark🥬'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: 'Audio🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.watermark },
@@ -2717,7 +2717,7 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/musically', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: 'No Watermark🥬'}, type: 1},
                     {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1}
                 ]
                 let buttonMessage = {
@@ -2772,7 +2772,7 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: 'Audio🎵'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.HD || anu.result.SD },
@@ -2822,8 +2822,8 @@ case 'webtonsearch': case 'webtoon':
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
-                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '🎵Audio🎵'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: 'Audio🎵'}, type: 1},
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: 'Video📽️'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
@@ -3312,7 +3312,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YouTube💌',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3322,12 +3322,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: 'All Menu📒',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: 'List Menu📝',
                                     id: `${prefix}command`
                                 }
                                 }, {
@@ -3372,7 +3372,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'YouTube💌',
                                     url: `${myweb}`
                                 }
                             }, {
